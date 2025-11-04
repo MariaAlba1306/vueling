@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vueling</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="googlebot" content="noindex" />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Akshar", sans-serif;
+        font-style: normal;
+      }
+      @media only screen and (max-width: 480px) {
+        .header tr {
+          display: block !important;
+          text-align: left !important;
+        }
+        .header-table {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+        .info-column span:first-child {
+          border-right: none !important;
+          padding-right: 0 !important;
+          margin-right: 0 !important;
+        }
+        .info-column span:last-child {
+          margin-left: 0 !important;
+        }
+
+        .name-column {
+          display: flex !important;
+          align-items: center !important;
+        }
+
+        .info-column {
+          display: flex;
+          flex-direction: column-reverse;
+          text-align: center !important;
+        }
+
+        .info-column span {
+          display: block !important;
+          margin: 2px 0 !important;
+        }
+
+        .desktop-img {
+          display: none !important;
+        }
+        .mobile-img {
+          display: block !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+        .stack-row {
+          white-space: normal !important;
+        }
+        .header-column,
+        .header-column td {
+          justify-content: center;
+          flex-direction: column;
+          display: inline-block;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+        }
+        .header-stack-column,
+        .header-stack-column td {
+          justify-content: center;
+          flex-direction: column;
+          display: inline-block;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+          flex-direction: column-reverse;
+        }
+        .name-stack-column,
+        .name-stack-column td {
+          justify-content: center;
+          flex-direction: column;
+          display: inline-block;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+          flex-direction: column-reverse;
+        }
+        .stack-column,
+        .stack-column td {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+        }
+        .stack-image img {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          display: block !important;
+          border-radius: 20px !important;
+        }
+        td[style*="padding:20px"] {
+          padding: 12px !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0; width: 100%; background-color: #bae9e9">
+    <table
+      style="width: 100%; max-width: 600px; margin: 0 auto"
+      align="center"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+    >
+      <tbody>
+        <tr>
+          <td width="100%" valign="top" align="center">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <!-- Header -->
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      class="header-table"
+                      style="background-color: #ffee00"
+                    >
+                      <tbody>
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              border="0"
+                              class="header"
+                              style="
+                                background-color: #ffee00;
+                                padding: 15px 30px 15px 30px;
+                              "
+                            >
+                              <tbody>
+                                <tr style="vertical-align: middle">
+                                  <!-- Columna 1: Imagen + Nombre -->
+                                  <td
+                                    class="name-column"
+                                    style="color: black; white-space: nowrap"
+                                  >
+                                    <table
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      border="0"
+                                      style="
+                                        display: inline-flex;
+                                        align-items: center;
+                                      "
+                                    >
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <img
+                                              src="https://i.postimg.cc/15054m1B/Captura-de-Pantalla-2025-11-03-a-las-19-20-51.png"
+                                              alt="icono"
+                                              width="20"
+                                              style="
+                                                display: block;
+                                                border-radius: 20px;
+                                                margin-right: 5px;
+                                              "
+                                            />
+                                          </td>
+                                          <td
+                                            style="
+                                              color: black;
+                                              font-weight: bold;
+                                            "
+                                          >
+                                            Raquel Martinez Fernandez
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+
+                                  <!-- Columna 2: ID + Avios -->
+                                  <td
+                                    class="info-column"
+                                    style="
+                                      color: black;
+                                      text-align: right;
+                                      white-space: nowrap;
+                                    "
+                                  >
+                                    <span
+                                      style="
+                                        margin-right: 15px;
+                                        padding-right: 15px;
+                                        border-right: 1px solid #000;
+                                        display: inline-block;
+                                      "
+                                      ><b>ID:</b> 348349473974</span
+                                    >
+                                    <span>0 <b>Avios</b></span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Cuerpo email -->
+                <tr>
+                  <td style="background-color: #e1f7f7">
+                    <table>
+                      <tbody>
+                        <!-- logo  -->
+                        <tr>
+                          <td>
+                            <table
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              border="0"
+                            >
+                              <tr>
+                                <td align="center" style="padding: 10px">
+                                  <img
+                                    src="https://i.postimg.cc/SKbXbn6V/Chat-GPT-Image-Nov-3-2025-11-19-38-AM.png"
+                                    style="
+                                      max-width: 150px;
+                                      width: 40%;
+                                      margin: 0 auto;
+                                      display: block;
+                                    "
+                                  />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <!-- Bloque 1 -->
+                        <tr>
+                          <td style="padding: 15px">
+                            <table
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              border="0"
+                              style="
+                                background-color: white;
+                                border-radius: 20px;
+                              "
+                            >
+                              <tr>
+                                <td>
+                                  <img
+                                    src="https://i.postimg.cc/SxhhdmSH/ES.jpg"
+                                    style="
+                                      width: 100%;
+                                      display: block;
+                                      border-radius: 20px 20px 0 0;
+                                    "
+                                    class="desktop-img"
+                                  />
+                                  <img
+                                    src="https://i.postimg.cc/rwkkjqVb/ES-resp.jpg"
+                                    style="
+                                      width: 100%;
+                                      display: none;
+                                      border-radius: 20px 20px 0 0;
+                                    "
+                                    class="mobile-img"
+                                  />
+                                  <p style="color: black; padding: 0px 20px">
+                                    Hola Raquel: <br />
+                                  </p>
+                                  <p style="color: black; padding: 0px 20px">
+                                    A pocos días del verano, queremos saber de
+                                    qué equipo eres tú: ¿huyes del calor o lo
+                                    adoras? ☀️
+                                  </p>
+
+                                  <p
+                                    style="
+                                      color: black;
+                                      padding: 0px 20px 20px 20px;
+                                    "
+                                  >
+                                    Descubre algunos destinos veraniegos
+                                    perfectos y prepárate para el tuyo.😎
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <!-- Bloque 2 -->
+                        <tr>
+                          <td style="padding: 20px">
+                            <table
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              border="0"
+                              style="
+                                background-color: white;
+                                border-radius: 14px;
+                              "
+                            >
+                              <tr>
+                                <td style="padding: 20px 20px 0 12px">
+                                  <table
+                                    width="100%"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
+                                  >
+                                    <tr>
+                                      <td
+                                        width="40"
+                                        style="vertical-align: middle"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/mZMzgNDT/Chat-GPT-Image-Nov-3-2025-12-49-23-PM.png"
+                                          alt="icono"
+                                          width="40"
+                                          style="
+                                            display: block;
+                                            border-radius: 14px;
+                                          "
+                                        />
+                                      </td>
+                                      <td style="vertical-align: middle">
+                                        <p style="margin: 0">
+                                          <b
+                                            >#TEAMCALORCITO: TÚ, EL SOL Y LA
+                                            PLAYA</b
+                                          >
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <table
+                                    width="100%"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
+                                    style="
+                                      table-layout: fixed;
+                                      width: 100%;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr class="stack-row">
+                                      <td
+                                        class="stack-column"
+                                        width="50%"
+                                        valign="top"
+                                        align="center"
+                                      >
+                                        <table
+                                          width="100%"
+                                          cellspacing="0"
+                                          cellpadding="0"
+                                          border="0"
+                                        >
+                                          <tr>
+                                            <td style="padding: 20px">
+                                              <img
+                                                src="https://i.postimg.cc/pLJt13r7/module-1-img.jpg"
+                                                alt="verano"
+                                                width="220"
+                                                style="
+                                                  display: block;
+                                                  width: 100%;
+                                                  height: auto;
+                                                  border-radius: 14px;
+                                                "
+                                              />
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+
+                                      <td
+                                        class="stack-column"
+                                        width="50%"
+                                        valign="top"
+                                        align="left"
+                                      >
+                                        <table
+                                          width="100%"
+                                          cellspacing="0"
+                                          cellpadding="0"
+                                          border="0"
+                                        >
+                                          <tr>
+                                            <td style="padding: 20px">
+                                              <p
+                                                style="
+                                                  line-height: 1.4;
+                                                  color: #000;
+                                                  margin: 0 0 15px 0;
+                                                "
+                                              >
+                                                Días calentitos, a tope la
+                                                vitamina D y mucha playa.
+                                                <b>Destinos perfectos</b>
+                                                para un verano cálido:
+                                                <b
+                                                  >Mallorca, Menorca, Ibiza,
+                                                  Fuerteventura, Malta,
+                                                  Santorini</b
+                                                >... Elige el tuyo y llévate
+                                                Avios con tu reserva. ☀️
+                                              </p>
+
+                                              <table
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                                border="0"
+                                              >
+                                                <tr>
+                                                  <td
+                                                    align="center"
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <button
+                                                      href="#"
+                                                      target="_blank"
+                                                      style="
+                                                        display: inline-block;
+                                                        padding: 10px 20px;
+
+                                                        color: black;
+                                                        text-decoration: none;
+                                                        border-radius: 20px;
+                                                        border: 0;
+                                                        background-color: #ffee00;
+                                                      "
+                                                    >
+                                                      <b>DESTINOS FRESQUITOS</b>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+
+                        <!-- Bloque 3 -->
+                        <tr>
+                          <td style="padding: 20px">
+                            <table
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              border="0"
+                              style="
+                                background-color: white;
+                                border-radius: 20px;
+                              "
+                            >
+                              <tr>
+                                <td style="padding: 20px 20px 0 12px">
+                                  <table
+                                    width="100%"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
+                                  >
+                                    <tr>
+                                      <td
+                                        width="40"
+                                        style="vertical-align: middle"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/mZMzgNDT/Chat-GPT-Image-Nov-3-2025-12-49-23-PM.png"
+                                          alt="icono"
+                                          width="40"
+                                          style="
+                                            display: block;
+                                            border-radius: 20px;
+                                          "
+                                        />
+                                      </td>
+                                      <td style="vertical-align: middle">
+                                        <p style="margin: 0">
+                                          <b
+                                            >#TEAMFRIECITO: SENDERISMO, MONTAÑAS
+                                            Y BRISA</b
+                                          >
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <table
+                                    width="100%"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
+                                    style="
+                                      table-layout: fixed;
+                                      width: 100%;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr class="stack-row">
+                                      <td
+                                        class="stack-column"
+                                        width="50%"
+                                        valign="top"
+                                        align="center"
+                                      >
+                                        <table
+                                          width="100%"
+                                          cellspacing="0"
+                                          cellpadding="0"
+                                          border="0"
+                                        >
+                                          <tr>
+                                            <td style="padding: 20px">
+                                              <img
+                                                src="https://i.postimg.cc/YCzwyTj7/module-2-img.jpg"
+                                                alt="verano"
+                                                width="220"
+                                                style="
+                                                  display: block;
+                                                  width: 100%;
+                                                  height: auto;
+                                                  border-radius: 14px;
+                                                "
+                                              />
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+
+                                      <td
+                                        class="stack-column"
+                                        width="50%"
+                                        valign="top"
+                                        align="left"
+                                      >
+                                        <table
+                                          width="100%"
+                                          cellspacing="0"
+                                          cellpadding="0"
+                                          border="0"
+                                        >
+                                          <tr>
+                                            <td style="padding: 20px">
+                                              <p
+                                                style="
+                                                  line-height: 1.4;
+                                                  color: #000;
+                                                  margin: 0 0 15px 0;
+                                                "
+                                              >
+                                                Si lo que quieres este verano es
+                                                huir del calor y
+                                                <b>disfrutar de días frescos</b
+                                                >, estos
+                                                <b
+                                                  >destinos llenos de
+                                                  naturaleza</b
+                                                >
+                                                son para ti:
+                                                <b
+                                                  >Lyon, Marsella, Cantabria,
+                                                  Asturias, Helsinki, Cardiff</b
+                                                >... ¿A qué esperas? Descúbrelos
+                                                todos y elige.
+                                              </p>
+
+                                              <table
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                                border="0"
+                                              >
+                                                <tr>
+                                                  <td
+                                                    align="center"
+                                                    padding-top:
+                                                    10px;
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <button
+                                                      href="#"
+                                                      target="_blank"
+                                                      style="
+                                                        display: inline-block;
+                                                        padding: 10px 20px;
+
+                                                        color: black;
+                                                        text-decoration: none;
+                                                        border-radius: 20px;
+                                                        border: 0;
+                                                        background-color: #ffee00;
+                                                      "
+                                                    >
+                                                      <b>DESTINOS FRESQUITOS</b>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- Bloque 4 -->
+                        <tr>
+                          <td style="padding: 20px">
+                            <table
+                              width="100%"
+                              cellspacing="0"
+                              cellpadding="0"
+                              border="0"
+                              style="
+                                background-color: white;
+                                border-radius: 20px;
+                                padding: 15px 15px 25px 15px;
+                              "
+                            >
+                              <tr>
+                                <td>
+                                  <table
+                                    width="100%"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
+                                    style="padding-bottom: 10px"
+                                  >
+                                    <tr>
+                                      <td
+                                        width="40"
+                                        style="vertical-align: middle"
+                                      >
+                                        <img
+                                          src="https://i.postimg.cc/mZMzgNDT/Chat-GPT-Image-Nov-3-2025-12-49-23-PM.png"
+                                          alt="icono"
+                                          width="40"
+                                          style="
+                                            display: block;
+                                            border-radius: 20px;
+                                          "
+                                        />
+                                      </td>
+                                      <td
+                                        style="
+                                          vertical-align: middle;
+                                          padding-bottom: 10px;
+                                        "
+                                      >
+                                        <p style="margin: 0">
+                                          <b>AL CALOR, MILES DE AVIOS</b>
+                                        </p>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <table
+                                    width="100%"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
+                                    style="
+                                      table-layout: fixed;
+                                      width: 100%;
+                                      border-collapse: collapse;
+                                    "
+                                  >
+                                    <tr class="stack-row">
+                                      <td
+                                        class="stack-column"
+                                        width="100%"
+                                        valign="top"
+                                        align="center"
+                                      >
+                                        <table
+                                          width="100%"
+                                          cellspacing="0"
+                                          cellpadding="0"
+                                          border="0"
+                                        >
+                                          <tr>
+                                            <td>
+                                              <img
+                                                src="https://i.postimg.cc/DwPKYRm0/module-3-img.jpg"
+                                                alt="verano"
+                                                width="220"
+                                                style="
+                                                  display: block;
+                                                  width: 100%;
+                                                  height: auto;
+                                                  border-radius: 14px;
+                                                "
+                                              />
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr class="stack-row">
+                                      <td
+                                        class="stack-column"
+                                        width="100%"
+                                        valign="top"
+                                        align="left"
+                                      >
+                                        <table
+                                          width="100%"
+                                          cellspacing="0"
+                                          cellpadding="0"
+                                          border="0"
+                                        >
+                                          <tr>
+                                            <td style="padding-top: 20px">
+                                              <p
+                                                style="
+                                                  line-height: 1.4;
+                                                  color: #000;
+                                                  margin: 0 0 15px 0;
+                                                "
+                                              >
+                                                Seas del team que seas, con
+                                                <b
+                                                  >Endesa estarás muy a gusto en
+                                                  casa, ya que, por ser Vueling
+                                                  Club</b
+                                                >
+                                                puedes conseguir 1.500 Avios
+                                                extra por cada servicio que
+                                                contrates (luz, gas y/o
+                                                mantenimiento). Podrás sumar
+                                                <b>hasta 18.500 Avios.</b>
+                                              </p>
+
+                                              <table
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                                border="0"
+                                              >
+                                                <tr>
+                                                  <td
+                                                    align="center"
+                                                    padding-top:
+                                                    10px;
+                                                    style="padding-top: 10px"
+                                                  >
+                                                    <button
+                                                      href="#"
+                                                      target="_blank"
+                                                      style="
+                                                        display: inline-block;
+                                                        padding: 10px 20px;
+
+                                                        color: black;
+                                                        text-decoration: none;
+                                                        border-radius: 20px;
+                                                        border: 0;
+                                                        background-color: #ffee00;
+                                                      "
+                                                    >
+                                                      <b>QUIERO MIS AVIOS</b>
+                                                    </button>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Footer  -->
+                <tr>
+                  <td style="">
+                    <table
+                      width="100%"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      style="
+                        background-color: black;
+                        font-size: 11px;
+                        text-align: center;
+                        color: rgb(112, 109, 109);
+                        padding: 10px 20px;
+                      "
+                    >
+                      <tr>
+                        <td>
+                          <p>
+                            Vueling Airlines, S.A., con domicilio en Viladecans
+                            Business Park, Edificio Brasil, Carrer de Catalunya,
+                            83, 08840, Viladecans (Barcelona), España, trata tus
+                            datos en su condición de responsable del
+                            tratamiento, con la finalidad de enviarte publicidad
+                            personalizada sobre productos y/o servicios de
+                            Vueling y/o empresas colaboradoras, en base al
+                            consentimiento que has prestado. Si no deseas
+                            recibir estas comunicaciones, puedes retirar tu
+                            consentimiento a través de nuestro Centro de
+                            Preferencias. Además, puedes ejercer tus derechos de
+                            acceso, portabilidad, rectificación, limitación,
+                            oposición y supresión de datos personales en
+                            cualquier momento enviando un correo electrónico a
+                            data.protection@vueling.com . Para más información,
+                            consulta nuestra Política de Privacidad.
+                          </p>
+                        </td>
+                      </tr>
+                      <!-- RRSS -->
+                      <tr>
+                        <td style="padding: 5px">
+                          <table align="center">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <img
+                                    style="width: 35px; padding: 2px"
+                                    src="https://i.postimg.cc/rwNLY7z4/rrss-facebook.png"
+                                    alt="facebook-icon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    style="width: 35px; padding: 2px"
+                                    src="https://i.postimg.cc/d0QKMnTT/rrss-youtube.png"
+                                    alt="youtube-icon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    style="width: 35px; padding: 2px"
+                                    src="https://i.postimg.cc/1zRZxMN3/rrss-instagram.png"
+                                    alt="instagram-icon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    style="width: 35px; padding: 2px"
+                                    src="https://i.postimg.cc/ZqYhkjyC/rrss-twitter.png"
+                                    alt="x-icon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    style="width: 35px; padding: 2px"
+                                    src="https://i.postimg.cc/3wrHM9D0/rrss-tiktok.png"
+                                    alt="tiktok-icon"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- download -->
+                      <tr class="stack-row">
+                        <td style="padding: 5px" class="stack-column">
+                          <table align="center">
+                            <tbody>
+                              <tr>
+                                <td class="icons">
+                                  <img
+                                    style="width: 150px; padding: 2px"
+                                    src="https://i.postimg.cc/GmCCKbLS/appstore.png"
+                                    alt="appstore-icon"
+                                  />
+                                </td>
+                                <td>
+                                  <img
+                                    style="width: 150px; padding: 2px"
+                                    src="https://i.postimg.cc/bw9jF4dd/playstore.png"
+                                    alt="googleplay-icon"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <!-- Help -->
+                      <tr>
+                        <td style="color: white; padding: 5px">
+                          <span
+                            style="
+                              margin-right: 15px;
+                              padding-right: 15px;
+                              border-right: 1px solid white;
+                              display: inline-block;
+                            "
+                            ><b>Ayuda</b></span
+                          >
+                          <span><b>Ver online</b></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 5px">
+                          <p>© 2024 Vueling Airline SA</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
