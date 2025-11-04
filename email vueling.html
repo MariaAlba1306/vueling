@@ -233,10 +233,9 @@
                                         font-size: 14px;
                                       "
                                     >
-                                      <!-- %%[ VAR @avios SET @avios =
+                                      %%[ VAR @avios SET @avios =
                                       AttributeValue("Avios") ]%%
-                                      %%=v(@avios)=%%&nbsp;<b>Avios</b> -->
-                                      0&nbsp;<b>Avios</b>
+                                      %%=v(@avios)=%%&nbsp;<b>Avios</b>
                                     </td>
                                   </tr>
                                   <tr>
@@ -249,10 +248,9 @@
                                         padding-top: 2px;
                                       "
                                     >
-                                      <!-- %%[ VAR @id SET @id =
+                                      %%[ VAR @id SET @id =
                                       AttributeValue("customer_id") ]%%
-                                      <b>ID:</b>&nbsp;%%=v(@id)=%% -->
-                                      <b>ID:</b> 0348475457439
+                                      <b>ID:</b>&nbsp;%%=v(@id)=%%
                                     </td>
                                   </tr>
                                 </table>
@@ -343,11 +341,10 @@
                               <tr>
                                 <td style="padding: 15px 15px 30px 15px">
                                   <p style="margin-top: 0px">
-                                    <!-- %%[ VAR @nombre SET @nombre =
+                                    %%[ VAR @nombre SET @nombre =
                                     AttributeValue("FirstName") ]%%
                                     Hola%%=IIF(EMPTY(@nombre), ":", CONCAT(", ",
-                                    ProperCase(@nombre), ":"))=%% -->
-                                    Hola, Raquel:
+                                    ProperCase(@nombre), ":"))=%%
                                   </p>
                                   <p>
                                     A pocos días del verano, queremos saber de
