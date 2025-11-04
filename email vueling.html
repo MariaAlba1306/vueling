@@ -13,8 +13,19 @@
     />
     <style>
       * {
-        font-family: "Akshar", sans-serif;
+        font-family: "Akshar", Arial, sans-serif;
         font-style: normal;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .desktop-header {
+          display: none !important;
+          max-height: 0 !important;
+          overflow: hidden !important;
+        }
+        .mobile-header {
+          display: table-row !important;
+        }
       }
       @media only screen and (max-width: 480px) {
         .header tr {
@@ -113,6 +124,11 @@
   </head>
 
   <body style="margin: 0; padding: 0; width: 100%; background-color: #bae9e9">
+    <!--[if mso]>
+    <center>
+    <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr><td>
+    <![endif]-->
     <table
       style="width: 100%; max-width: 600px; margin: 0 auto"
       align="center"
@@ -128,100 +144,154 @@
                 <!-- Header -->
                 <tr>
                   <td>
+                    <!--[if mso]>
+    <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr><td>
+    <![endif]-->
                     <table
                       width="100%"
                       cellspacing="0"
                       cellpadding="0"
                       border="0"
-                      class="header-table"
                       style="background-color: #ffee00"
                     >
-                      <tbody>
-                        <tr>
-                          <td>
-                            <table
-                              width="100%"
-                              cellspacing="0"
-                              cellpadding="0"
-                              border="0"
-                              class="header"
-                              style="
-                                background-color: #ffee00;
-                                padding: 15px 30px 15px 30px;
-                              "
-                            >
-                              <tbody>
-                                <tr style="vertical-align: middle">
-                                  <!-- Columna 1: Imagen + Nombre -->
-                                  <td
-                                    class="name-column"
-                                    style="color: black; white-space: nowrap"
-                                  >
-                                    <table
-                                      cellspacing="0"
-                                      cellpadding="0"
-                                      border="0"
-                                      style="
-                                        display: inline-flex;
-                                        align-items: center;
-                                      "
-                                    >
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <img
-                                              src="https://i.postimg.cc/15054m1B/Captura-de-Pantalla-2025-11-03-a-las-19-20-51.png"
-                                              alt="icono"
-                                              width="20"
-                                              style="
-                                                display: block;
-                                                border-radius: 20px;
-                                                margin-right: 5px;
-                                              "
-                                            />
-                                          </td>
-                                          <td
-                                            style="
-                                              color: black;
-                                              font-weight: bold;
-                                            "
-                                          >
-                                            Raquel Martinez Fernandez
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                  </td>
+                      <tr>
+                        <td align="center" style="padding: 15px 20px">
+                          <table
+                            width="100%"
+                            cellspacing="0"
+                            cellpadding="0"
+                            border="0"
+                            style="max-width: 600px"
+                          >
+                            <!-- Versión Desktop -->
+                            <tr class="desktop-header">
+                              <td
+                                align="left"
+                                valign="middle"
+                                style="
+                                  color: black;
+                                  font-family: 'Akshar', Arial, sans-serif;
+                                  font-size: 14px;
+                                  white-space: nowrap;
+                                "
+                              >
+                                <img
+                                  src="https://i.postimg.cc/15054m1B/Captura-de-Pantalla-2025-11-03-a-las-19-20-51.png"
+                                  alt="icono"
+                                  width="20"
+                                  style="
+                                    vertical-align: middle;
+                                    margin-right: 5px;
+                                    border-radius: 50%;
+                                  "
+                                />
+                                Raquel&nbsp;Martinez&nbsp;Fernandez
+                              </td>
 
-                                  <!-- Columna 2: ID + Avios -->
-                                  <td
-                                    class="info-column"
-                                    style="
-                                      color: black;
-                                      text-align: right;
-                                      white-space: nowrap;
-                                    "
-                                  >
-                                    <span
+                              <td
+                                align="right"
+                                valign="middle"
+                                style="
+                                  color: black;
+                                  font-family: 'Akshar', Arial, sans-serif;
+                                  font-size: 14px;
+                                  white-space: nowrap;
+                                "
+                              >
+                                <span
+                                  style="
+                                    margin-right: 10px;
+                                    padding-right: 10px;
+                                    border-right: 1px solid #000;
+                                  "
+                                  ><b>ID:</b>&nbsp;348349473974</span
+                                >
+                                <span>0&nbsp;<b>Avios</b></span>
+                              </td>
+                            </tr>
+
+                            <!-- Versión Mobile -->
+                            <tr class="mobile-header" style="display: none">
+                              <td
+                                colspan="2"
+                                align="center"
+                                style="
+                                  color: black;
+                                  font-family: 'Akshar', Arial, sans-serif;
+                                  font-size: 14px;
+                                "
+                              >
+                                <table
+                                  cellspacing="0"
+                                  cellpadding="0"
+                                  border="0"
+                                  align="center"
+                                >
+                                  <tr>
+                                    <!-- Imagen + Nombre -->
+                                    <td
+                                      align="center"
                                       style="
-                                        margin-right: 15px;
-                                        padding-right: 15px;
-                                        border-right: 1px solid #000;
-                                        display: inline-block;
+                                        color: black;
+                                        font-family: 'Akshar', Arial, sans-serif;
+                                        font-size: 14px;
+                                        white-space: nowrap;
                                       "
-                                      ><b>ID:</b> 348349473974</span
                                     >
-                                    <span>0 <b>Avios</b></span>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                      </tbody>
+                                      <img
+                                        src="https://i.postimg.cc/15054m1B/Captura-de-Pantalla-2025-11-03-a-las-19-20-51.png"
+                                        alt="icono"
+                                        width="25"
+                                        style="
+                                          vertical-align: middle;
+                                          border-radius: 50%;
+                                          margin-right: 6px;
+                                        "
+                                      />
+                                      Raquel&nbsp;Martinez&nbsp;Fernandez
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <!-- Avios arriba -->
+                                    <td
+                                      align="center"
+                                      style="
+                                        color: black;
+                                        font-family: 'Akshar', Arial, sans-serif;
+                                        font-size: 14px;
+                                      "
+                                    >
+                                      0&nbsp;<b>Avios</b>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <!-- ID abajo -->
+                                    <td
+                                      align="center"
+                                      style="
+                                        color: black;
+                                        font-family: 'Akshar', Arial, sans-serif;
+                                        font-size: 14px;
+                                        padding-top: 2px;
+                                      "
+                                    >
+                                      <b>ID:</b>&nbsp;348349473974
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
                     </table>
+                    <!--[if mso]>
+    </td></tr></table>
+    <![endif]-->
                   </td>
                 </tr>
+
                 <!-- Cuerpo email -->
                 <tr>
                   <td style="background-color: #e1f7f7">
@@ -237,7 +307,7 @@
                               border="0"
                             >
                               <tr>
-                                <td align="center" style="padding: 10px">
+                                <td align="center" style="padding-top: 10px">
                                   <img
                                     src="https://i.postimg.cc/SKbXbn6V/Chat-GPT-Image-Nov-3-2025-11-19-38-AM.png"
                                     style="
@@ -263,13 +333,13 @@
                               border="0"
                               style="
                                 background-color: white;
-                                border-radius: 20px;
+                                border-radius: 15px;
                               "
                             >
                               <tr>
                                 <td>
                                   <img
-                                    src="https://i.postimg.cc/SxhhdmSH/ES.jpg"
+                                    src="https://raw.githubusercontent.com/MariaAlba1306/vueling/main/recursos/ES.jpg"
                                     style="
                                       width: 100%;
                                       display: block;
@@ -278,7 +348,7 @@
                                     class="desktop-img"
                                   />
                                   <img
-                                    src="https://i.postimg.cc/rwkkjqVb/ES-resp.jpg"
+                                    src="https://raw.githubusercontent.com/MariaAlba1306/vueling/refs/heads/main/recursos/ES_resp.jpg"
                                     style="
                                       width: 100%;
                                       display: none;
@@ -286,21 +356,20 @@
                                     "
                                     class="mobile-img"
                                   />
-                                  <p style="color: black; padding: 0px 20px">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding: 15px 15px 25px 15px">
+                                  <p style="color: black; margin-top: 0px">
                                     Hola Raquel: <br />
                                   </p>
-                                  <p style="color: black; padding: 0px 20px">
+                                  <p style="color: black">
                                     A pocos días del verano, queremos saber de
                                     qué equipo eres tú: ¿huyes del calor o lo
                                     adoras? ☀️
                                   </p>
 
-                                  <p
-                                    style="
-                                      color: black;
-                                      padding: 0px 20px 20px 20px;
-                                    "
-                                  >
+                                  <p style="color: black; margin-bottom: 0px">
                                     Descubre algunos destinos veraniegos
                                     perfectos y prepárate para el tuyo.😎
                                   </p>
@@ -320,11 +389,12 @@
                               border="0"
                               style="
                                 background-color: white;
-                                border-radius: 14px;
+                                border-radius: 15px;
+                                padding: 15px 15px 25px 15px;
                               "
                             >
                               <tr>
-                                <td style="padding: 20px 20px 0 12px">
+                                <td>
                                   <table
                                     width="100%"
                                     cellspacing="0"
@@ -342,7 +412,7 @@
                                           width="40"
                                           style="
                                             display: block;
-                                            border-radius: 14px;
+                                            border-radius: 15px;
                                           "
                                         />
                                       </td>
@@ -360,7 +430,7 @@
                               </tr>
 
                               <tr>
-                                <td>
+                                <td style="padding-top: 10px">
                                   <table
                                     width="100%"
                                     cellspacing="0"
@@ -386,16 +456,16 @@
                                           border="0"
                                         >
                                           <tr>
-                                            <td style="padding: 20px">
+                                            <td>
                                               <img
-                                                src="https://i.postimg.cc/pLJt13r7/module-1-img.jpg"
+                                                src="https://raw.githubusercontent.com/MariaAlba1306/vueling/refs/heads/main/recursos/module_1_img.jpg"
                                                 alt="verano"
                                                 width="220"
                                                 style="
                                                   display: block;
                                                   width: 100%;
                                                   height: auto;
-                                                  border-radius: 14px;
+                                                  border-radius: 15px;
                                                 "
                                               />
                                             </td>
@@ -416,12 +486,15 @@
                                           border="0"
                                         >
                                           <tr>
-                                            <td style="padding: 20px">
+                                            <td
+                                              style="width: 10%; height: 15px"
+                                            ></td>
+                                            <td>
                                               <p
                                                 style="
                                                   line-height: 1.4;
                                                   color: #000;
-                                                  margin: 0 0 15px 0;
+                                                  margin: 0px;
                                                 "
                                               >
                                                 Días calentitos, a tope la
@@ -446,22 +519,20 @@
                                                     align="center"
                                                     style="padding-top: 10px"
                                                   >
-                                                    <button
-                                                      href="#"
+                                                    <a
+                                                      href="https://www.vueling.com/es/reserva-tu-vuelo/destinos-de-sol-y-playa"
                                                       target="_blank"
                                                       style="
                                                         display: inline-block;
-                                                        padding: 10px 20px;
-
+                                                        padding: 7px 25px;
                                                         color: black;
-                                                        text-decoration: none;
-                                                        border-radius: 20px;
-                                                        border: 0;
                                                         background-color: #ffee00;
+                                                        border-radius: 20px;
+                                                        text-decoration: none;
                                                       "
                                                     >
-                                                      <b>DESTINOS FRESQUITOS</b>
-                                                    </button>
+                                                      DESTINOS CÁLIDOS
+                                                    </a>
                                                   </td>
                                                 </tr>
                                               </table>
@@ -487,11 +558,12 @@
                               border="0"
                               style="
                                 background-color: white;
-                                border-radius: 20px;
+                                border-radius: 15px;
+                                padding: 15px 15px 25px 15px;
                               "
                             >
                               <tr>
-                                <td style="padding: 20px 20px 0 12px">
+                                <td>
                                   <table
                                     width="100%"
                                     cellspacing="0"
@@ -509,7 +581,7 @@
                                           width="40"
                                           style="
                                             display: block;
-                                            border-radius: 20px;
+                                            border-radius: 15px;
                                           "
                                         />
                                       </td>
@@ -527,7 +599,7 @@
                               </tr>
 
                               <tr>
-                                <td>
+                                <td style="padding-top: 10px">
                                   <table
                                     width="100%"
                                     cellspacing="0"
@@ -553,16 +625,16 @@
                                           border="0"
                                         >
                                           <tr>
-                                            <td style="padding: 20px">
+                                            <td>
                                               <img
-                                                src="https://i.postimg.cc/YCzwyTj7/module-2-img.jpg"
+                                                src="https://raw.githubusercontent.com/MariaAlba1306/vueling/refs/heads/main/recursos/module_2_img.jpg"
                                                 alt="verano"
                                                 width="220"
                                                 style="
                                                   display: block;
                                                   width: 100%;
                                                   height: auto;
-                                                  border-radius: 14px;
+                                                  border-radius: 15px;
                                                 "
                                               />
                                             </td>
@@ -583,12 +655,15 @@
                                           border="0"
                                         >
                                           <tr>
-                                            <td style="padding: 20px">
+                                            <td
+                                              style="width: 10%; height: 15px"
+                                            ></td>
+                                            <td>
                                               <p
                                                 style="
                                                   line-height: 1.4;
                                                   color: #000;
-                                                  margin: 0 0 15px 0;
+                                                  margin: 0px;
                                                 "
                                               >
                                                 Si lo que quieres este verano es
@@ -615,26 +690,22 @@
                                                 <tr>
                                                   <td
                                                     align="center"
-                                                    padding-top:
-                                                    10px;
                                                     style="padding-top: 10px"
                                                   >
-                                                    <button
-                                                      href="#"
+                                                    <a
+                                                      href="https://www.vueling.com/es/reserva-tu-vuelo/destinos-de-naturaleza-y-rurales"
                                                       target="_blank"
                                                       style="
                                                         display: inline-block;
-                                                        padding: 10px 20px;
-
+                                                        padding: 7px 25px;
                                                         color: black;
-                                                        text-decoration: none;
-                                                        border-radius: 20px;
-                                                        border: 0;
                                                         background-color: #ffee00;
+                                                        border-radius: 20px;
+                                                        text-decoration: none;
                                                       "
                                                     >
-                                                      <b>DESTINOS FRESQUITOS</b>
-                                                    </button>
+                                                      DESTINOS FRESQUITOS
+                                                    </a>
                                                   </td>
                                                 </tr>
                                               </table>
@@ -659,7 +730,7 @@
                               border="0"
                               style="
                                 background-color: white;
-                                border-radius: 20px;
+                                border-radius: 15px;
                                 padding: 15px 15px 25px 15px;
                               "
                             >
@@ -683,7 +754,7 @@
                                           width="40"
                                           style="
                                             display: block;
-                                            border-radius: 20px;
+                                            border-radius: 15px;
                                           "
                                         />
                                       </td>
@@ -731,14 +802,14 @@
                                           <tr>
                                             <td>
                                               <img
-                                                src="https://i.postimg.cc/DwPKYRm0/module-3-img.jpg"
+                                                src="https://raw.githubusercontent.com/MariaAlba1306/vueling/refs/heads/main/recursos/module_3_img.jpg"
                                                 alt="verano"
                                                 width="220"
                                                 style="
                                                   display: block;
                                                   width: 100%;
                                                   height: auto;
-                                                  border-radius: 14px;
+                                                  border-radius: 15px;
                                                 "
                                               />
                                             </td>
@@ -789,26 +860,23 @@
                                                 <tr>
                                                   <td
                                                     align="center"
-                                                    padding-top:
-                                                    10px;
                                                     style="padding-top: 10px"
                                                   >
-                                                    <button
-                                                      href="#"
+                                                    <a
+                                                      href="https://vuelaconendesa.com/vueling/?eml=vl:avs:agg:eees:gdc:bnf:solvl:acd:bf:ups:land:endesa-clientes-cast:ctp:spd:spd::eml:html::na::mtd::::&dclid=CjgKEAjw7KqZBhCDnsn7urvXsXYSJACBlswTvS-5pgmLnhLGgsjJEi0yWifqiMZTy_YhffntIZnqfPD_BwE&utm_source=newsletter&utm_medium=email&CRM=AVI_202403_Endesa_2024321&utm_campaign=AVI_202403_Endesa_2024321&hem=952c71bd9bd4c7cbf2d844fd17b7953cce5179f7d0e5f82e3eb2648b372343c
+8"
                                                       target="_blank"
                                                       style="
                                                         display: inline-block;
-                                                        padding: 10px 20px;
-
+                                                        padding: 7px 25px;
                                                         color: black;
-                                                        text-decoration: none;
-                                                        border-radius: 20px;
-                                                        border: 0;
                                                         background-color: #ffee00;
+                                                        border-radius: 20px;
+                                                        text-decoration: none;
                                                       "
                                                     >
-                                                      <b>QUIERO MIS AVIOS</b>
-                                                    </button>
+                                                      QUIERO MIS AVIOS
+                                                    </a>
                                                   </td>
                                                 </tr>
                                               </table>
@@ -872,39 +940,62 @@
                             <tbody>
                               <tr>
                                 <td>
-                                  <img
-                                    style="width: 35px; padding: 2px"
-                                    src="https://i.postimg.cc/rwNLY7z4/rrss-facebook.png"
-                                    alt="facebook-icon"
-                                  />
+                                  <a
+                                    href="https://www.facebook.com/Vueling/?locale=es_ES"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      style="width: 35px; padding: 2px"
+                                      src="https://raw.githubusercontent.com/MariaAlba1306/vueling/main/recursos/rrss-facebook.png"
+                                      alt="facebook-icon"
+                                  /></a>
                                 </td>
                                 <td>
-                                  <img
-                                    style="width: 35px; padding: 2px"
-                                    src="https://i.postimg.cc/d0QKMnTT/rrss-youtube.png"
-                                    alt="youtube-icon"
-                                  />
+                                  <a
+                                    href="https://www.youtube.com/c/vueling"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      style="width: 35px; padding: 2px"
+                                      src="https://raw.githubusercontent.com/MariaAlba1306/vueling/main/recursos/rrss-youtube.png"
+                                      alt="youtube-icon"
+                                    />
+                                  </a>
                                 </td>
                                 <td>
-                                  <img
-                                    style="width: 35px; padding: 2px"
-                                    src="https://i.postimg.cc/1zRZxMN3/rrss-instagram.png"
-                                    alt="instagram-icon"
-                                  />
+                                  <a
+                                    href="https://www.instagram.com/vueling/"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      style="width: 35px; padding: 2px"
+                                      src="https://raw.githubusercontent.com/MariaAlba1306/vueling/main/recursos/rrss-instagram.png"
+                                      alt="instagram-icon"
+                                    />
+                                  </a>
                                 </td>
                                 <td>
-                                  <img
-                                    style="width: 35px; padding: 2px"
-                                    src="https://i.postimg.cc/ZqYhkjyC/rrss-twitter.png"
-                                    alt="x-icon"
-                                  />
+                                  <a
+                                    href="https://x.com/vueling?lang=es"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      style="width: 35px; padding: 2px"
+                                      src="https://raw.githubusercontent.com/MariaAlba1306/vueling/main/recursos/rrss-twitter.png"
+                                      alt="x-icon"
+                                    />
+                                  </a>
                                 </td>
                                 <td>
-                                  <img
-                                    style="width: 35px; padding: 2px"
-                                    src="https://i.postimg.cc/3wrHM9D0/rrss-tiktok.png"
-                                    alt="tiktok-icon"
-                                  />
+                                  <a
+                                    href="https://www.tiktok.com/@vueling_es"
+                                    target="_blank"
+                                  >
+                                    <img
+                                      style="width: 35px; padding: 2px"
+                                      src="https://raw.githubusercontent.com/MariaAlba1306/vueling/main/recursos/rrss-tiktok.png"
+                                      alt="tiktok-icon"
+                                  /></a>
                                 </td>
                               </tr>
                             </tbody>
@@ -965,5 +1056,9 @@
         </tr>
       </tbody>
     </table>
+    <!--[if mso]>
+    </td></tr></table>
+    </center>
+    <![endif]-->
   </body>
 </html>
